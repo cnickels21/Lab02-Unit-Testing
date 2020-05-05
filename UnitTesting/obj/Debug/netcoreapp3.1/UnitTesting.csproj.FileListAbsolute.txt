@@ -1,0 +1,12 @@
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.exe
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.deps.json
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.runtimeconfig.json
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.runtimeconfig.dev.json
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.dll
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\bin\Debug\netcoreapp3.1\UnitTesting.pdb
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.csproj.CoreCompileInputs.cache
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.AssemblyInfoInputs.cache
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.AssemblyInfo.cs
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.dll
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.pdb
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.genruntimeconfig.cache

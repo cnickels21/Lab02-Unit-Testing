@@ -2,11 +2,17 @@
 
 namespace UnitTesting
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to my ATM simulation!");
+
+        }
+
+        public static int TestingTheTest(int num)
+        {
+            return num + 1;
         }
     }
 }
