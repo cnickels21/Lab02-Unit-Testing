@@ -8,7 +8,15 @@ namespace UnitTesting
         {
             Console.WriteLine("Welcome to my ATM simulation!");
 
-            AtmTransactionHandler(500);
+            try
+            {
+                AtmTransactionHandler(500);
+                Console.WriteLine("Thank you for your time!");
+            }
+            finally
+            {
+                Environment.Exit(0);
+            }
             
         }
 
