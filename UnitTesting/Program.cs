@@ -29,17 +29,21 @@ namespace UnitTesting
                     Console.WriteLine("To check your balance enter 1.\nTo withdraw money enter 2.\nTo deposit money enter 3.\nTo exit enter \"x\".");
                     int selectedTransaction = int.Parse(Console.ReadLine());
 
+                    if (selectedTransaction == 1)
+                    {
+                        Console.WriteLine($"Your balance is: {userBalance}\n");
+                    }
+
                 }
                 catch (FormatException fex) // Throw back to main when user chooses exit
                 {
                     throw fex;
-
                 }
             }
             
         }
 
-
+        //public static int CheckBalance()
 
 
 
