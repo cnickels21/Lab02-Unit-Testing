@@ -10,3 +10,4 @@ C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1
 C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.dll
 C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.pdb
 C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.genruntimeconfig.cache
+C:\Users\c_nic\DeltaV\401\Lab02-Unit-Testing\UnitTesting\obj\Debug\netcoreapp3.1\UnitTesting.csprojAssemblyReference.cache
