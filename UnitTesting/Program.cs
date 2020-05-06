@@ -19,8 +19,6 @@ namespace UnitTesting
         public static void AtmTransactionHandler()
         {
             // Continue to ask for transaction type until exit is chosen
-            while (true)
-            {
                 try
                 {
                     // Initiate user balance as 0
@@ -32,6 +30,7 @@ namespace UnitTesting
                     if (selectedTransaction == 1)
                     {
                         Console.WriteLine($"\nYour balance is: {userBalance}\n");
+                        return;
                     }
                     if (selectedTransaction == 2)
                     {
@@ -40,6 +39,9 @@ namespace UnitTesting
                     if (selectedTransaction == 3)
                     {
                         Console.WriteLine("\nHow much would you like to deposit: \n");
+                        decimal depositAmount = decimal.Parse(Console.ReadLine());
+                        userBalance = DepositHandler(userBalance, depositAmount);
+                        Console.WriteLine($"\nYour balance is now: {userBalance}\n");
                     }
 
                 }
@@ -47,7 +49,6 @@ namespace UnitTesting
                 {
                     throw fex;
                 }
-            }
             
         }
 
