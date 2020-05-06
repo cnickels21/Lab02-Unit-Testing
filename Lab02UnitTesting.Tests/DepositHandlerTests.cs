@@ -12,7 +12,7 @@ namespace Lab02UnitTesting.Tests
             decimal inputTwo = (decimal)6.58;
 
             // Act
-            decimal result = UnitTesting.Program.DepositHandler(inputOne, inputTwo);
+            decimal result = UnitTesting.Program.DepositHandler(inputOne);
 
             // Assert
             Assert.Equal((decimal)250.01, result);
