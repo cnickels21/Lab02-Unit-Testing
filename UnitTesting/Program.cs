@@ -24,14 +24,22 @@ namespace UnitTesting
                 try
                 {
                     // Initiate user balance as 0
-                    int userBalance = 0;
+                    decimal userBalance = 0;
 
-                    Console.WriteLine("To check your balance enter 1.\nTo withdraw money enter 2.\nTo deposit money enter 3.\nTo exit enter \"x\".\n");
+                    Console.WriteLine("To check your balance enter 1.\nTo withdraw money enter 2.\nTo deposit money enter 3.\nTo exit enter \"x\".");
                     int selectedTransaction = int.Parse(Console.ReadLine());
 
                     if (selectedTransaction == 1)
                     {
                         Console.WriteLine($"\nYour balance is: {userBalance}\n");
+                    }
+                    if (selectedTransaction == 2)
+                    {
+                        Console.WriteLine("\nHow much would you like to withdraw: \n");
+                    }
+                    if (selectedTransaction == 3)
+                    {
+                        Console.WriteLine("\nHow much would you like to deposit: \n");
                     }
 
                 }
@@ -43,7 +51,10 @@ namespace UnitTesting
             
         }
 
-        //public static int CheckBalance()
+        public static decimal DepositHandler(decimal currentBalance, decimal depositAmount)
+        {
+            return currentBalance + depositAmount;
+        }
 
 
 
