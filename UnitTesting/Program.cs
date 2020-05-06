@@ -11,7 +11,10 @@ namespace UnitTesting
             try
             {
                 AtmTransactionHandler(500);
-                Console.WriteLine("Thank you for your time!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"We're sorry! Something went wrong: {ex}");
             }
             finally
             {
@@ -61,6 +64,10 @@ namespace UnitTesting
             {
                 Console.WriteLine("\nInvalid response. Please enter a number!\n");
                 AtmTransactionHandler(userBalance);
+            }
+            catch (ArgumentOutOfRangeException aex)
+            {
+                throw aex;
             }
             
 
