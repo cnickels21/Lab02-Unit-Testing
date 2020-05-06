@@ -1,5 +1,3 @@
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using System;
 using Xunit;
 
 namespace Lab02UnitTesting.Tests

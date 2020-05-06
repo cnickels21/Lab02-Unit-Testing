@@ -8,7 +8,7 @@ namespace UnitTesting
         {
             Console.WriteLine("Welcome to my ATM simulation!");
 
-            AtmTransactionHandler();
+            AtmTransactionHandler(500);
         }
 
         public static int TestingTheTest(int num)
@@ -16,40 +16,45 @@ namespace UnitTesting
             return num + 1;
         }
 
-        public static void AtmTransactionHandler()
+        public static void AtmTransactionHandler(decimal currentBalance)
         {
             // Continue to ask for transaction type until exit is chosen
-                try
-                {
-                    // Initiate user balance as 0
-                    decimal userBalance = 0;
 
-                    Console.WriteLine("To check your balance enter 1.\nTo withdraw money enter 2.\nTo deposit money enter 3.\nTo exit enter \"x\".");
-                    int selectedTransaction = int.Parse(Console.ReadLine());
+            // Initiate user balance as 0
+            decimal userBalance = currentBalance;
 
-                    if (selectedTransaction == 1)
-                    {
-                        Console.WriteLine($"\nYour balance is: {userBalance}\n");
-                        return;
-                    }
-                    if (selectedTransaction == 2)
-                    {
-                        Console.WriteLine("\nHow much would you like to withdraw: \n");
-                    }
-                    if (selectedTransaction == 3)
-                    {
-                        Console.WriteLine("\nHow much would you like to deposit: \n");
-                        decimal depositAmount = decimal.Parse(Console.ReadLine());
-                        userBalance = DepositHandler(userBalance, depositAmount);
-                        Console.WriteLine($"\nYour balance is now: {userBalance}\n");
-                    }
+            Console.WriteLine("To check your balance enter 1.\nTo withdraw money enter 2.\nTo deposit money enter 3.\nTo exit enter \"4\".");
+            int selectedTransaction = int.Parse(Console.ReadLine());
 
-                }
-                catch (FormatException fex) // Throw back to main when user chooses exit
-                {
-                    throw fex;
-                }
-            
+            if (selectedTransaction == 1)
+            {
+                Console.WriteLine($"\nYour balance is: {userBalance}\n");
+                AtmTransactionHandler(userBalance);
+            }
+            if (selectedTransaction == 2)
+            {
+                Console.WriteLine("\nHow much would you like to withdraw: \n");
+                decimal withdrawalAmount = decimal.Parse(Console.ReadLine());
+                userBalance = WithdrawalHandler(userBalance, withdrawalAmount);
+                Console.WriteLine($"\nYour balance is now: {userBalance}\n");
+                AtmTransactionHandler(userBalance);
+            }
+            if (selectedTransaction == 3)
+            {
+                Console.WriteLine("\nHow much would you like to deposit: \n");
+                decimal depositAmount = decimal.Parse(Console.ReadLine());
+                userBalance = DepositHandler(userBalance, depositAmount);
+                Console.WriteLine($"\nYour balance is now: {userBalance}\n");
+                AtmTransactionHandler(userBalance);
+            }
+            if (selectedTransaction == 4)
+            {
+                return;
+            }
+
+
+
+
         }
 
         public static decimal DepositHandler(decimal currentBalance, decimal depositAmount)
@@ -57,7 +62,10 @@ namespace UnitTesting
             return currentBalance + depositAmount;
         }
 
-
+        public static decimal WithdrawalHandler(decimal currentBalance, decimal withdrawalAmount)
+        {
+            return currentBalance - withdrawalAmount;
+        }
 
     }
 }
