@@ -26,12 +26,12 @@ namespace UnitTesting
                     // Initiate user balance as 0
                     int userBalance = 0;
 
-                    Console.WriteLine("To check your balance enter 1.\nTo withdraw money enter 2.\nTo deposit money enter 3.\nTo exit enter \"x\".");
+                    Console.WriteLine("To check your balance enter 1.\nTo withdraw money enter 2.\nTo deposit money enter 3.\nTo exit enter \"x\".\n");
                     int selectedTransaction = int.Parse(Console.ReadLine());
 
                     if (selectedTransaction == 1)
                     {
-                        Console.WriteLine($"Your balance is: {userBalance}\n");
+                        Console.WriteLine($"\nYour balance is: {userBalance}\n");
                     }
 
                 }
